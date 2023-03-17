@@ -1,0 +1,1143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    
+}
+
+.BG {
+
+    background-color: #efe9e1;
+    color: #363636;
+}
+
+/* HEADER */
+
+.header {        
+ background-color:#efe9e1;
+ display: grid;
+ grid-template-columns: 1fr 4fr;
+ grid-template-rows: 80px;
+ align-items: center;
+
+}
+
+
+.header .header__titulo {
+    
+    display: flex;
+    justify-content: flex-start;
+   
+}
+
+.header .header__titulo h1 {
+
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 10px;
+
+}
+
+.header .header__nav {
+
+   grid-column: 2 / 3;
+
+}
+
+.header .header__nav .header__nav__links {
+
+    display: flex;
+
+   justify-content: space-around;
+
+}
+
+
+.header .header__nav .header__nav__links a {
+
+    text-decoration: none;
+    
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #363636;
+
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.header .header__nav .header__nav__links a:hover {
+
+ color: #dda15e;
+
+}
+
+.header .header__nav .header__navMovil {
+
+    display: none;
+
+}
+
+.fixBs {
+
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0;
+
+}
+
+.fixBs h1 {
+
+    padding-bottom: 4px;
+    padding-top: 12px;
+}
+
+
+/* INDEX */
+
+.inicio{
+
+ background-image: url(../img/index\ img.jpeg);
+ background-size: cover;
+ background-repeat: no-repeat;
+    
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 300px 300px 300px;
+
+}
+
+.inicio .inicio__texto {
+
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.inicio .inicio__texto h2 {
+
+    color: #f9feff;
+    text-align: center;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+
+}
+
+.inicio .inicio__texto a {
+
+    color: #ecf39e;
+    text-align: center;
+    font-size: 45px;
+    text-decoration: none;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 700;
+}
+
+.inicio .inicio__texto a:hover {
+
+  color: #3c5f51;
+
+}
+
+.productos{
+
+    background-color: #322d29;
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 200px auto;
+    padding-bottom: 100px;
+    border-top: #3c5f51;
+    border-top-style: solid;
+    gap: 10px;
+
+}
+
+.productos h3 {
+position: relative;
+text-align: center;
+font-size: 45px;
+color: #efe9e1;
+padding: 40px;
+font-family: 'Hind Madurai', sans-serif;
+font-weight: 700;
+
+}
+
+.productos img {
+    
+    width: 400px;
+    height: 310px;
+    border-radius: 5px;
+
+}
+
+.productos .productos__destacados {
+
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+.productos .productos__destacados .productos__destacados__style {
+
+    background-color: #d1c7bd;
+
+    border-radius: 15px;
+
+    width: 400px;
+
+    height: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    color: #202224;
+
+    box-shadow: 5px 5px 12px 0 #202224;
+
+}
+
+.productos .productos__destacados .productos__destacados__style h4 {
+
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+.productos .productos__destacados .productos__destacados__style p {
+
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.productos .productos__destacados .productos__destacados__style input {
+
+    height: 35px;
+
+    width: 180px;
+
+    border-radius: 10px;
+
+    background-color: #558673;
+
+    border-style: none;
+
+    color: #f9feff;
+
+}
+
+.productos .productos__destacados .productos__destacados__style input:hover {
+
+   background-color: #75af99;
+
+} 
+
+/* FOOTER */
+
+.pie {   
+
+    padding-top: 20px;
+    background-color: #322d29;
+    color: #f9feff;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.pie img {
+
+ width: 40px;
+
+ height: 40px;
+
+}
+
+.pie .fb {
+
+    justify-self: end;
+    display: flex;
+}
+
+.pie .ig {
+
+    display: flex;
+
+}
+
+.pie .telefono {
+
+    justify-self: end;
+
+    display: flex;
+}
+
+.pie .correo {
+
+    display: flex;
+}
+
+.pie div p {
+
+    margin-top: 10px;
+
+    margin-left: 5px;
+
+}
+
+/* CONTACTO */
+
+.contacto {   
+
+    background-image: url(../img/fondo\ contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.contacto .contacto__texto {
+
+    grid-column: 2/3;
+
+    display: flex;
+    
+    flex-direction: column;
+
+    text-align: center;
+
+    justify-content: center;
+
+}
+
+.contacto .contacto__texto h2 {
+
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+.contacto .contacto__texto p {
+
+    font-size: 25px;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+#casillaMail {
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: center;
+    width: 500px;
+    height: 350px;
+    background-color: #efe9e1;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 12px #202224;
+    border-style: dashed;
+    border-color: #902c2c;
+    
+
+}
+
+#casillaMail .inputMail {
+
+    border-radius: 15px;
+    height: 40px;
+    width: 350px;
+
+}
+
+#casillaMail .inputEnviar {
+
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+
+}
+
+
+#casillaMail label {
+
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+/* QUIENES SOMOS */
+
+.quienesSomos .info { 
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.quienesSomos .info .info__texto {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #202224;
+    color: #efe9e1;
+
+}
+
+.quienesSomos .info .info__texto h2 {
+
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+.quienesSomos .info .info__texto p {
+
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    font-family: 'Hind Madurai', sans-serif;
+   
+
+}
+
+
+.quienesSomos .info .info__img {
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+}
+
+.clientes {
+
+    margin: 35px;
+
+}
+
+.clientes h2 {
+
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 5px;
+
+}
+
+.clientes .clientes__info {
+
+    background-color: #202224;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 5px;
+    padding-bottom: 50px;
+}
+
+
+.clientes .clientes__info .clientes__info__style {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 2%;
+    border-right-style: solid;
+}
+
+.clientes .clientes__info .clientes__info__style img {
+
+    height: 400px;
+    width: 400px;
+    border-radius: 1px;
+
+}
+
+.clientes .clientes__info .clientes__info__style h3 {
+
+    font-size: 35px;
+    font-weight: 500;
+    color: #efe9e1;
+    padding-right: 12%;
+    padding-bottom: 4px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.clientes .clientes__info .clientes__info__frame {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2.4% ;
+    border-left-style: solid;
+
+}
+
+.clientes .clientes__info .clientes__info__frame h3 {
+
+    font-size: 35px;
+    font-weight: 500;
+    color: #efe9e1;
+    padding-left: 12%;
+    padding-bottom: 4px;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+/* pag subcripciones */
+
+.sub {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1000px;
+    background-image: url(../img/fondoSuscripciones.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.sub .sub__texto {
+
+    grid-template-rows: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub .sub__texto h2 {
+
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #f9feff;
+
+}
+
+.sub .sub__texto p {
+
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 60px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #f9feff;
+}
+
+.sub .sub__planes {
+
+    display: flex;
+    gap:40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 6%;
+
+}
+
+.sub .sub__planes .sub__planes__style {
+
+    background-color: #efe9e1;
+    border-radius: 10px;
+    height: 450px;
+    width: 350px;
+    box-shadow: 3px 3px 12px 0 #202224;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sub .sub__planes .sub__planes__style h3 {
+
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 5px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.sub .sub__planes .sub__planes__style p {
+
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 20px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.sub .sub__planes .sub__planes__style input {
+
+    border-radius: 5px;
+    background-color: #558673;
+    height: 35px;
+    width: 120px;
+    border-style: none;
+    margin-top: 5px;
+    font-size: 17px;
+
+}
+
+.sub .sub__planes .sub__planes__style input:hover {
+
+    background-color: #6eba9d;
+    box-shadow: 3px 3px 12px 0 #6eba9d;
+   
+}
+
+/* TIENDA */
+
+.tienda {
+
+    background-color: #322d29;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    max-height: 1200px;
+
+    grid-template-rows: 150px auto;
+
+}
+
+.tienda form {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    margin-top: 20px;
+
+}
+
+.tienda form .barraBus {
+
+    border-radius: 10px;
+    width: 35%;
+    height: 40px;
+}
+
+.tienda form .buscar {
+
+    height: 40px;
+    width: 5%;
+    border-radius: 10px;
+}
+
+.tienda .tienda__productos .tienda__productos__style img {
+
+    height: 230px;
+    width: 230px;
+    border-radius: 70px;
+
+}
+
+
+.tienda .tienda__productos {
+
+    display: flex;
+
+    gap: 50px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 80px;
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+    
+}
+
+.tienda .tienda__productos .tienda__productos__style{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9feff;
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+.tienda .tienda__productos .tienda__productos__style h2 {
+
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 10px;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+.tienda .tienda__productos .tienda__productos__style p {
+
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px 10px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+/* responsive movil */
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+
+    .header {
+
+        background-color: #efe9e1;
+        padding-top: 1px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 80px;
+    }
+
+    .header .header__titulo {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .header__nav {
+
+        grid-column: 1/2;
+
+    }
+
+    .header .header__nav .header__nav__links {
+
+        display: none;
+    }
+
+    .header .header__nav .header__navMovil {
+
+        grid-row: 2/3;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .header .header__nav .header__navMovil .header__navMovil__style {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .header__nav .header__navMovil .header__navMovil__style img {
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .header .header__nav .header__navMovil .header__navMovil__style p {
+
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+       
+    /* Index */
+
+     .inicio {
+
+        background-position: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px 250px;
+       
+  }
+
+    .inicio .inicio__texto a {
+
+        display: none;
+
+    }
+
+    .inicio .inicio__texto h2 {
+
+       font-size: 45px;
+       margin-left: 15px;
+       margin-right: 15px;
+    
+    }
+
+    .productos .productos__destacados {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .productos .productos__destacados .productos__destacados__style {
+
+        background-color: #d1c7bd;
+    
+        border-radius: 15px;
+    
+        width: 350px;
+    
+        height: 500px;
+    
+        display: flex;
+    
+        flex-direction: column;
+    
+        align-items: center;
+    
+        color: #202224;
+    
+        box-shadow: 5px 5px 12px 0 #202224;
+    
+    }
+
+    .productos img {
+    
+        width: 350px;
+        height: 310px;
+        border-radius: 5px;
+    
+    }
+
+    /* footer */
+
+    .pie {   
+
+        padding-top: 20px;
+        background-color: #322d29;
+        color: #f9feff;
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        
+    }
+
+    .pie .telefono {
+
+        justify-self: end;
+    
+        display: flex;
+
+        margin-left: 15px;
+    }
+
+    /* TIENDA */
+
+    .tienda {
+
+        background-color: #322d29;
+    
+        display: grid;
+    
+        grid-template-columns: 1fr;
+
+        max-height: 3000px;
+    
+        grid-template-rows: 150px auto;
+    
+    }
+    
+
+    .tienda form .buscar {
+
+        height: 40px;
+        width: 15%;
+        border-radius: 10px;
+    }
+
+    .tienda form .barraBus {
+
+        border-radius: 10px;
+        width: 50%;
+        height: 40px;
+    }
+
+    .tienda .tienda__productos {
+
+        display: flex;
+    
+        gap: 50px;
+    
+        justify-content: center;
+    
+        margin-bottom: 80px;
+    
+        margin-left: 30px;
+    
+        margin-right: 30px;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        flex-wrap: wrap;
+    
+    }
+    
+    .tienda .tienda__productos .tienda__productos__style{
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #f9feff;
+        height: 200px;
+        width: 350px;
+        border-radius: 10px;
+    
+    }
+
+    .tienda .tienda__productos .tienda__productos__style img {
+
+        height: 180px;
+        width: 180px;
+        border-radius: 70px;
+    
+    }
+
+    .tienda .tienda__productos .tienda__productos__style h2 {
+
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+        margin: 0 5px;
+    
+    }
+
+    .tienda .tienda__productos .tienda__productos__style p {
+
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        margin: 5px 5px;
+    }
+
+    .tienda .tienda__productos .movilTienda {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Quienes somos */
+
+    .quienesSomos .info { 
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 800px 400px;
+    
+    }
+
+    .quienesSomos .info .info__texto h2 {
+
+        text-align: center;
+        font-size: 35px;
+    
+    }
+
+    .quienesSomos .info .info__texto p {
+
+        font-size: 18px;
+
+
+
+    }
+
+    .quienesSomos .clientes h2 {
+
+        font-size: 32px;
+
+    }
+
+    .clientes .clientes__info {
+
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .clientes .clientes__info .clientes__info__style {
+
+        align-items: center;
+        justify-content: center;
+        padding-right: 0%;
+        border-right-style: none;
+
+    }
+
+    .clientes .clientes__info .clientes__info__style img {
+
+        height: 250px;
+        width: 250px;
+
+    }
+
+    .clientes .clientes__info .clientes__info__style h3 {
+
+        padding-right: 0;
+        padding-bottom: 3px;
+
+    }
+
+    .clientes .clientes__info .clientes__info__frame {
+
+        align-items: center;
+        padding-left: 0;
+        border-left-style: none;
+
+    }
+
+    .clientes .clientes__info .clientes__info__frame iframe {
+
+        height: 250px;
+        width: 250px;
+    }
+
+    .clientes .clientes__info .clientes__info__frame h3 {
+
+        padding-left: 0;
+        padding-bottom: 3px;
+
+    }
+
+
+
+    
+
+    /* Contacto */
+
+    .contacto {   
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    
+    }
+
+    #casillaMail {
+
+        grid-row: 2/3;
+        justify-self: center;
+        width: 300px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .contacto .contacto__texto h2 {
+
+        font-size: 50px;
+    
+    }
+
+    #casillaMail .inputMail {
+
+        width: 250px;
+    
+    }
+
+    /* Suscripciones */
+
+    .sub {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1500px;
+        background-image: url(../img/fondoSuscripcionesMovil.jpg);
+        background-position: left;
+    
+    }
+
+    .sub .sub__texto p {
+
+        margin-bottom: 12px;
+    }
+    
+
+    .sub .sub__planes {
+
+        display: flex;
+        gap:40px;
+        flex-direction: column;
+        align-items: center;        
+    
+    }
+
+    #sub .sub__planes .sub__planes__style {
+
+        height: 400px;
+        width: 350px;
+       
+    
+    }
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
