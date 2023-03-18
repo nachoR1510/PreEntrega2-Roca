@@ -124,7 +124,7 @@
     color: #f9feff;
     text-align: center;
     font-family: 'Hind Madurai', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
 
 }
@@ -133,7 +133,7 @@
 
     color: #ecf39e;
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     text-decoration: none;
     font-family: 'Hind Madurai', sans-serif;
     font-weight: 700;
@@ -251,56 +251,127 @@ font-weight: 700;
 .pie {   
 
     padding-top: 20px;
-    background-color: #322d29;
+    background-color: #1b2727;
     color: #f9feff;
     font-size: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding-bottom: 20px;
+    border-top-style: solid;
+    border-top-width: 1px;
     
+}
+
+.pie .pie__texto {
+
+    grid-column: 2/3;
+
+    text-align: center;
+
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+.pie .pie__links {
+
+    grid-column: 1/2;
+
+    align-items: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+.pie .pie__links h5 {
+
+    font-size: 30px;
+    color: #f9feff;
+    font-weight: 700;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+.pie .pie__fix {
+
+    padding-bottom: 2px;
+}
+
+.pie .pie__links li a {
+
+    text-decoration: none;
+
+    color: #f9feff;
+
+    font-size: 20px;
+
+    font-weight: 700px;
+
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+.pie .pie__links li a:hover{
+
+    color: #6eba9d;
+}
+
+.pie .pie__contacto {
+
+    grid-column: 3/4;
+
+    align-items: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.pie .pie__contacto .fb {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pie .pie__contacto .ig {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pie .pie__contacto .telefono {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pie .pie__contacto .correo {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .pie img {
 
- width: 40px;
+ width: 35px;
 
- height: 40px;
-
-}
-
-.pie .fb {
-
-    justify-self: end;
-    display: flex;
-}
-
-.pie .ig {
-
-    display: flex;
+ height: 35px;
 
 }
 
-.pie .telefono {
 
-    justify-self: end;
-
-    display: flex;
-}
-
-.pie .correo {
-
-    display: flex;
-}
-
-.pie div p {
-
-    margin-top: 10px;
-
-    margin-left: 5px;
-
-}
 
 /* CONTACTO */
 
@@ -842,26 +913,32 @@ font-weight: 700;
 
     .pie {   
 
-        padding-top: 20px;
-        background-color: #322d29;
-        color: #f9feff;
         font-size: 15px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 20px;
-        padding-bottom: 20px;
-        margin-bottom: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
         
     }
 
-    .pie .telefono {
+    .pie .pie__texto {
 
-        justify-self: end;
-    
-        display: flex;
+        grid-row: 1/2;
 
-        margin-left: 15px;
+        grid-column: 1/2;
+    }
+
+    .pie .pie__links {
+
+        display: none;
+
+    }
+
+    .pie .pie__contacto {
+        
+        grid-column: 1/2;
+
+        grid-row: 2/3;
+
     }
 
     /* TIENDA */
