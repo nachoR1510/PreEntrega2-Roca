@@ -81,6 +81,11 @@
 
 }
 
+.destacar {
+
+    color: #75af99;
+}
+
 .fixBs {
 
     margin: 0 0 0 0 ;
@@ -462,52 +467,30 @@ font-weight: 700;
 
 /* QUIENES SOMOS */
 
-.quienesSomos .info { 
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.quienesSomos {
 
-}
-
-.quienesSomos .info .info__texto {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #202224;
-    color: #efe9e1;
-
 }
 
-.quienesSomos .info .info__texto h2 {
+.quienesSomos .quienesSomos__info h2{
 
-    font-size: 40px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #f9feff;
     font-weight: 700;
-    margin-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
+    font-size: 40px;
+}
+
+.quienesSomos .quienesSomos__info p {
+
     font-family: 'Hind Madurai', sans-serif;
-
-}
-
-.quienesSomos .info .info__texto p {
-
-    font-size: 20px;
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: 10px;
-    font-family: 'Hind Madurai', sans-serif;
-   
+    color: #f9feff;
+    font-size: 18px;
 
 }
 
 
-.quienesSomos .info .info__img {
-
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-
-}
 
 .clientes {
 
@@ -1039,33 +1022,9 @@ font-weight: 700;
 
     /* Quienes somos */
 
-    .quienesSomos .info { 
+    .quienesSomos .quienesSomos__img {
 
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 800px 400px;
-    
-    }
-
-    .quienesSomos .info .info__texto h2 {
-
-        text-align: center;
-        font-size: 35px;
-    
-    }
-
-    .quienesSomos .info .info__texto p {
-
-        font-size: 18px;
-
-
-
-    }
-
-    .quienesSomos .clientes h2 {
-
-        font-size: 32px;
-
+        display: none;
     }
 
     .clientes .clientes__info {
