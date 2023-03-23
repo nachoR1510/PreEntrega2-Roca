@@ -1,0 +1,723 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.BG {
+  background-color: #efe9e1;
+  color: #363636;
+}
+
+.header {
+  background-color: #efe9e1;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 80px;
+  align-items: center;
+}
+.header__titulo {
+  display: flex;
+  justify-content: flex-start;
+}
+.header__titulo h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 35px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.header__nav {
+  grid-column: 2/3;
+}
+.header__nav__links {
+  display: flex;
+  justify-content: space-around;
+}
+.header__nav__links a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: #363636;
+  font-family: "Hind Madurai", sans-serif;
+}
+.header__nav__links a:hover {
+  color: #6eba9d;
+}
+.header__navMovil {
+  display: none;
+}
+
+.fixBs {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.fixBs h1 {
+  padding-bottom: 4px;
+  padding-top: 12px;
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding-top: 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 80px;
+  }
+  .header__titulo {
+    display: flex;
+    justify-content: center;
+  }
+  .header__nav {
+    grid-column: 1/2;
+  }
+  .header__nav__links {
+    display: none;
+  }
+  .header__navMovil {
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-around;
+  }
+  .header__navMovil__style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__navMovil__style img {
+    width: 40px;
+    height: 40px;
+  }
+  .header__navMovil__style p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+.inicio {
+  background-image: url(../img/index\ img.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+}
+.inicio__texto {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+.inicio__texto h2 {
+  color: #f9feff;
+  text-align: center;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+.inicio__texto a {
+  color: #f9feff;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: none;
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 700;
+}
+.inicio__texto a:hover {
+  color: #6eba9d;
+}
+
+.productos {
+  background-color: #322d29;
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 200px auto;
+  padding-bottom: 100px;
+  border-top: #3c5f51;
+  border-top-style: solid;
+  gap: 10px;
+}
+.productos h3 {
+  position: relative;
+  text-align: center;
+  font-size: 45px;
+  color: #f9feff;
+  padding: 40px;
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 700;
+}
+.productos img {
+  width: 400px;
+  height: 310px;
+  border-radius: 5px;
+}
+.productos__destacados {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.productos__destacados__style {
+  background-color: #d1c7bd;
+  border-radius: 15px;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #202224;
+  box-shadow: 5px 5px 12px 0 #202224;
+}
+.productos__destacados__style h4 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Hind Madurai", sans-serif;
+}
+.productos__destacados__style p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Hind Madurai", sans-serif;
+}
+.productos__destacados__style input {
+  height: 35px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: #558673;
+  border-style: none;
+  color: #f9feff;
+}
+.productos__destacados__style input:hover {
+  background-color: #75af99;
+}
+
+@media (max-width: 480px) {
+  .inicio {
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px;
+  }
+  .inicio a {
+    display: none;
+  }
+  .inicio h2 {
+    font-size: 45px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .productos__destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productos__destacados__style {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productos img {
+    width: 350px;
+    height: 310px;
+    border-radius: 5px;
+  }
+}
+.tienda {
+  background-color: #322d29;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-height: 1200px;
+  grid-template-rows: 150px auto;
+}
+.tienda form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.tienda form .barraBus {
+  border-radius: 10px;
+  width: 35%;
+  height: 40px;
+}
+.tienda form .buscar {
+  height: 40px;
+  width: 5%;
+  border-radius: 10px;
+}
+.tienda__productos {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.tienda__productos__style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9feff;
+  height: 350px;
+  width: 300px;
+  border-radius: 10px;
+}
+.tienda__productos__style h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  margin: 0 10px;
+  font-family: "Hind Madurai", sans-serif;
+}
+.tienda__productos__style p {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 5px 10px;
+  font-family: "Hind Madurai", sans-serif;
+}
+.tienda__productos__style img {
+  height: 230px;
+  width: 230px;
+  border-radius: 70px;
+}
+
+@media (max-width: 480px) {
+  .tienda {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: 3000px;
+    grid-template-rows: 150px auto;
+  }
+  .tienda form .buscar {
+    height: 40px;
+    width: 20%;
+    border-radius: 10px;
+  }
+  .tienda form .barraBus {
+    border-radius: 10px;
+    width: 50%;
+    height: 40px;
+  }
+  .tienda__productos {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .tienda__productos__style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f9feff;
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+  }
+  .tienda__productos__style img {
+    height: 180px;
+    width: 180px;
+    border-radius: 70px;
+  }
+  .tienda__productos__style h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  .tienda__productos__style p {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 5px;
+  }
+  .tienda__productos .movilTienda {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.quienesSomos {
+  background-color: #202224;
+}
+.quienesSomos__info h2 {
+  font-family: "Hind Madurai", sans-serif;
+  color: #f9feff;
+  font-weight: 700;
+  padding: 5px;
+  font-size: 40px;
+}
+.quienesSomos__info p {
+  font-family: "Hind Madurai", sans-serif;
+  color: #f9feff;
+  font-size: 18px;
+}
+
+.clientes {
+  margin: 35px;
+}
+.clientes h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.clientes__info {
+  background-color: #202224;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 5px;
+  padding-bottom: 50px;
+}
+.clientes__info__style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 2%;
+  border-right-style: solid;
+}
+.clientes__info__style img {
+  height: 400px;
+  width: 400px;
+  border-radius: 1px;
+}
+.clientes__info__style h3 {
+  font-size: 35px;
+  font-weight: 500;
+  color: #f9feff;
+  padding-right: 12%;
+  padding-bottom: 4px;
+  font-family: "Hind Madurai", sans-serif;
+}
+.clientes__info__frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2.4%;
+  border-left-style: solid;
+}
+.clientes__info__frame h3 {
+  font-size: 35px;
+  font-weight: 500;
+  color: #efe9e1;
+  padding-left: 12%;
+  padding-bottom: 4px;
+  font-family: "Hind Madurai", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .quienesSomos__img {
+    display: none;
+  }
+  .clientes__info {
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 1fr 1fr;
+  }
+  .clientes__info__style {
+    align-items: center;
+    justify-content: center;
+    padding-right: 0%;
+    border-right-style: none;
+  }
+  .clientes__info__style img {
+    height: 250px;
+    width: 250px;
+  }
+  .clientes__info__style h3 {
+    padding-right: 0;
+    padding-bottom: 3px;
+  }
+  .clientes__info__frame {
+    align-items: center;
+    padding-left: 0;
+    border-left-style: none;
+  }
+  .clientes__info__frame iframe {
+    height: 250px;
+    width: 250px;
+  }
+  .clientes__info__frame h3 {
+    padding-left: 0;
+    padding-bottom: 3px;
+  }
+}
+.contacto {
+  background-image: url(../img/fondo\ contacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.contacto__texto {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.contacto__texto h2 {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Hind Madurai", sans-serif;
+}
+.contacto__texto p {
+  font-size: 25px;
+  font-family: "Hind Madurai", sans-serif;
+}
+
+#casillaMail {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-self: center;
+  width: 500px;
+  height: 350px;
+  background-color: #f9feff;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 12px 0 #202224;
+  border-style: dashed;
+  border-color: #902c2c;
+}
+#casillaMail .inputMail {
+  border-radius: 15px;
+  height: 40px;
+  width: 350px;
+}
+#casillaMail .inputEnviar {
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 120px;
+  height: 30px;
+}
+#casillaMail label {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .contacto__texto h2 {
+    font-size: 50px;
+  }
+  #casillaMail {
+    grid-row: 2/3;
+    justify-self: center;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #casillaMail .inputMail {
+    width: 250px;
+  }
+}
+.sub {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 1000px;
+  background-image: url(../img/fondoSuscripciones.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sub__texto {
+  grid-template-rows: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sub__texto h2 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Hind Madurai", sans-serif;
+  color: #f9feff;
+}
+.sub__texto p {
+  font-size: 18px;
+  text-align: center;
+  margin: 5px 60px;
+  font-family: "Hind Madurai", sans-serif;
+  color: #f9feff;
+}
+.sub__planes {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 6%;
+}
+.sub__planes__style {
+  background-color: #efe9e1;
+  border-radius: 10px;
+  height: 450px;
+  width: 350px;
+  box-shadow: 5px 5px 12px 0 #202224;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub__planes__style h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 5px;
+  font-family: "Hind Madurai", sans-serif;
+}
+.sub__planes__style p {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 20px;
+  font-family: "Hind Madurai", sans-serif;
+}
+.sub__planes__style input {
+  border-radius: 5px;
+  background-color: #558673;
+  height: 35px;
+  width: 120px;
+  border-style: none;
+  margin-top: 5px;
+  font-size: 17px;
+}
+.sub__planes__style input:hover {
+  background-color: #6eba9d;
+  box-shadow: 3px 3px 12px 0 #6eba9d;
+}
+
+@media (max-width: 480px) {
+  .sub {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1500px;
+    background-image: url(../img/fondoSuscripcionesMovil.jpg);
+    background-position: left;
+  }
+  .sub__texto p {
+    margin-bottom: 12px;
+  }
+  .sub__planes {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sub__planes__style {
+    height: 450px;
+    width: 350px;
+  }
+}
+.pie {
+  padding-top: 20px;
+  background-color: #1b2727;
+  color: #f9feff;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.pie__texto {
+  grid-column: 2/3;
+  text-align: center;
+  font-family: "Hind Madurai", sans-serif;
+}
+.pie__links {
+  grid-column: 1/2;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.pie__links h5 {
+  font-size: 30px;
+  color: #f9feff;
+  font-weight: 700;
+  font-family: "Hind Madurai", sans-serif;
+}
+.pie__links li a {
+  text-decoration: none;
+  color: #f9feff;
+  font-size: 20px;
+  font-weight: 700px;
+  font-family: "Hind Madurai", sans-serif;
+}
+.pie__links li a:hover {
+  color: #6eba9d;
+}
+.pie__fix {
+  padding-bottom: 2px;
+}
+.pie__contacto {
+  grid-column: 3/4;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Hind Madurai", sans-serif;
+}
+.pie__contacto .fb {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pie__contacto .ig {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pie__contacto .telefono {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pie__contacto .correo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pie img {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 480px) {
+  .pie {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+  }
+  .pie__texto {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .pie__links {
+    display: none;
+  }
+  .pie__contacto {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}/*# sourceMappingURL=main.css.map */

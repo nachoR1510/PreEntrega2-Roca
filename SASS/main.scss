@@ -1,0 +1,25 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    
+}
+
+.BG{
+
+    background-color: $colorBG;
+    color: $colorFont;
+}
+
+@import "header";
+@import "index";
+@import "tienda";
+@import "quienesSomos";
+@import "contacto";
+@import "suscripciones";
+@import "footer";
+
+

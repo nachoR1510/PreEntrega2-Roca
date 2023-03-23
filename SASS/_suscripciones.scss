@@ -1,0 +1,114 @@
+.sub {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1000px;
+    background-image: url(../img/fondoSuscripciones.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__texto{
+
+        grid-template-rows: 1/2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+
+            font-size: 40px;
+            font-weight: 700;
+            font-family: $fuente;
+            color: $colorFontAlt;
+        }
+        p{
+
+            font-size: 18px;
+            text-align: center;
+            margin: 5px 60px;
+            font-family: $fuente;
+            color: $colorFontAlt;
+        }
+    }
+    &__planes{
+
+        display: flex;
+        gap:40px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 6%;
+        &__style{
+
+            background-color: #efe9e1;
+            border-radius: 10px;
+            height: 450px;
+            width: 350px;
+            box-shadow: $boxShadow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+
+                font-size: 25px;
+                font-weight: 700;
+                margin-top: 5px;
+                font-family: $fuente;
+            }
+            p{
+
+                font-size: 18px;
+                text-align: center;
+                margin: 10px 20px;
+                font-family: $fuente;
+            }
+            input{
+
+                border-radius: 5px;
+                background-color: #558673;
+                height: 35px;
+                width: 120px;
+                border-style: none;
+                margin-top: 5px;
+                font-size: 17px;
+                &:hover{
+
+                    background-color: #6eba9d;
+                    box-shadow: 3px 3px 12px 0 #6eba9d;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width:$movil){
+
+    .sub {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1500px;
+        background-image: url(../img/fondoSuscripcionesMovil.jpg);
+        background-position: left;
+        &__texto {
+
+            p{
+
+                margin-bottom: 12px;
+            }
+            
+        }
+        &__planes{
+
+            display: flex;
+            gap:40px;
+            flex-direction: column;
+            align-items: center;
+            &__style{
+
+                height: 450px;
+                width: 350px;
+            }
+        }
+    }
+}

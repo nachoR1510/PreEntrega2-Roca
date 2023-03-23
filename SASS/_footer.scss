@@ -1,0 +1,114 @@
+.pie {
+
+    padding-top: 20px;
+    background-color: $colorFooter;
+    color: $colorFontAlt;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    padding-bottom: 20px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    &__texto{
+
+        grid-column: 2/3;
+        text-align: center;
+        font-family: $fuente;
+    }
+    &__links {
+
+        grid-column: 1/2;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h5{
+            font-size: 30px;
+            color: $colorFontAlt;
+            font-weight: 700;
+            font-family: $fuente;
+        }
+        li a {
+
+            text-decoration: none;
+            color: $colorFontAlt;
+            font-size: 20px;
+            font-weight: 700px;
+            font-family: $fuente;
+            &:hover {
+
+                color: $colorHover;
+            }
+        }
+    }
+    &__fix{
+
+        padding-bottom: 2px;
+    }
+    &__contacto {
+
+        grid-column: 3/4;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-family: $fuente;
+        .fb{
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .ig{
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .telefono{
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .correo{
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+    img{
+
+        width: 35px;
+        height: 35px;
+    }
+
+}
+
+@media (max-width: $movil){
+
+    .pie{
+
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+        &__texto{
+
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        &__links{
+
+            display: none;
+        }
+        &__contacto{
+
+            grid-column: 1/2;
+
+            grid-row: 2/3;
+        }
+    }
+}

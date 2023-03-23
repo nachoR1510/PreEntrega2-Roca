@@ -1,0 +1,142 @@
+.quienesSomos {
+
+    background-color: #202224;
+    &__info{
+
+        h2{
+
+            font-family: $fuente;
+            color: $colorFontAlt;
+            font-weight: 700;
+            padding: 5px;
+            font-size: 40px;
+        }
+        p{
+
+            font-family: $fuente;
+            color: $colorFontAlt;
+            font-size: 18px;
+        }
+    }
+}
+
+.clientes {
+
+    margin: 35px;
+    h2{
+
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+    &__info{
+
+        background-color: #202224;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        border-radius: 5px;
+        padding-bottom: 50px;
+        &__style{
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding-right: 2%;
+            border-right-style: solid;
+            img{
+
+                height: 400px;
+                width: 400px;
+                border-radius: 1px;
+            }
+            h3 {
+
+                font-size: 35px;
+                font-weight: 500;
+                color: $colorFontAlt;
+                padding-right: 12%;
+                padding-bottom: 4px;
+                font-family: $fuente;
+            }
+            
+        }
+        &__frame{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 2.4% ;
+            border-left-style: solid;
+            h3{
+
+                font-size: 35px;
+                font-weight: 500;
+                color: #efe9e1;
+                padding-left: 12%;
+                padding-bottom: 4px;
+                font-family: $fuente;
+            }
+        }
+
+    }
+    
+}
+
+@media(max-width: $movil) {
+
+    .quienesSomos {
+
+        &__img{
+
+            display: none;
+        }
+    }
+
+    .clientes {
+
+        &__info{
+
+         display: grid;
+         grid-template-columns: 350px;
+         grid-template-rows: 1fr 1fr;
+         &__style{
+
+            align-items: center;
+            justify-content: center;
+            padding-right: 0%;
+            border-right-style: none;
+            img{
+
+                height: 250px;
+                width: 250px;
+            }
+            h3 {
+
+                padding-right: 0;
+                padding-bottom: 3px;
+            }
+
+          }
+          &__frame{
+
+            align-items: center;
+            padding-left: 0;
+            border-left-style: none;
+            iframe{
+
+                height: 250px;
+                width: 250px;
+            }
+            h3{
+
+                padding-left: 0;
+                padding-bottom: 3px;
+            }
+        }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.tienda {
+
+    background-color: #322d29;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: 1200px;
+    grid-template-rows: 150px auto;
+    form {
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 20px;
+        .barraBus{
+
+            border-radius: 10px;
+            width: 35%;
+            height: 40px;
+        }
+        .buscar{
+
+            height: 40px;
+            width: 5%;
+            border-radius: 10px;
+        }
+    }
+    &__productos{
+
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+        margin-left: 30px;
+        margin-right: 30px;
+        &__style{
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $colorFontAlt;
+            height: 350px;
+            width: 300px;
+            border-radius: 10px;
+            h2{
+
+                font-size: 30px;
+                text-align: center;
+                font-weight: 700;
+                margin: 0 10px;
+                font-family: $fuente;
+            }
+            p {
+
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+                margin: 5px 10px;
+                font-family: $fuente;
+            }
+            img{
+
+                height: 230px;
+                width: 230px;
+                border-radius: 70px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: $movil){
+
+    .tienda {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        max-height: 3000px;
+        grid-template-rows: 150px auto;
+        form .buscar{
+
+            height: 40px;
+            width: 20%;
+            border-radius: 10px;
+        }
+        form .barraBus{
+
+            border-radius: 10px;
+            width: 50%;
+            height: 40px;
+        }
+        &__productos {
+
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            margin-bottom: 80px;
+            margin-left: 30px;
+            margin-right: 30px;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            &__style{
+    
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: #f9feff;
+                height: 200px;
+                width: 350px;
+                border-radius: 10px;
+                img{
+
+                    height: 180px;
+                    width: 180px;
+                    border-radius: 70px;
+                }
+                h2{
+
+                    font-size: 25px;
+                    text-align: center;
+                    font-weight: bold;
+                    margin: 0 5px;
+                }
+                p{
+
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-align: center;
+                    margin: 5px 5px;
+                }
+            }
+         .movilTienda{
+            
+             display: flex;
+             flex-direction: column;
+            }
+        }
+    }
+
+
+}
