@@ -140,3 +140,60 @@
         }
     }
 }
+
+@media (min-width: 481px ) and (max-width:$tablet) {
+
+    .quienesSomos {
+
+        &__img{
+
+            display: none;
+        }
+    }
+
+    .clientes {
+
+        &__info{
+
+         display: grid;
+         grid-template-columns: auto;
+         grid-template-rows: 1fr 1fr;
+         justify-items: center;
+         align-items: center;
+         &__style{
+
+            padding-right: 0%;
+            border-right-style: none;
+            align-items: center;
+            justify-content: center;
+            img{
+
+                height: 400px;
+                width: 400px;
+            }
+            h3 {
+
+                padding-right: 0;
+                padding-bottom: 3px;
+            }
+
+          }
+          &__frame{
+
+            align-items: center;
+            padding-left: 0;
+            border-left-style: none;
+            iframe{
+
+                height: 400px;
+                width: 400px;
+            }
+            h3{
+
+                padding-left: 0;
+                padding-bottom: 3px;
+            }
+        }
+        }
+    }
+}

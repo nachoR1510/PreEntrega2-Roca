@@ -112,3 +112,29 @@
         }
     }
 }
+
+@media (min-width: 481px ) and (max-width:$tablet) {
+
+    .pie{
+
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+        &__texto{
+
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        &__links{
+
+            display: none;
+        }
+        &__contacto{
+
+            grid-column: 1/2;
+
+            grid-row: 2/3;
+        }
+    }
+}

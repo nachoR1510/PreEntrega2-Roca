@@ -112,3 +112,33 @@
         }
     }
 }
+
+@media (min-width: 481px ) and (max-width:$tablet) {
+
+    .sub {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1500px;
+        &__texto {
+
+            p{
+
+                margin-bottom: 12px;
+            }
+            
+        }
+        &__planes{
+
+            display: flex;
+            gap:40px;
+            flex-direction: column;
+            align-items: center;
+            &__style{
+
+                height: 450px;
+                width: 350px;
+            }
+        }
+    }
+}
