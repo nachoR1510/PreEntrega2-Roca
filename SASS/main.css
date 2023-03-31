@@ -625,9 +625,7 @@
   }
 }
 .contacto {
-  background-image: url(../img/fondo\ contacto.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to top, #051e22, #5a944d);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -820,7 +818,7 @@
 }
 .pie {
   padding-top: 20px;
-  background-color: #1b2727;
+  background-image: linear-gradient(to top, #0c1111, #1b2727);
   color: #f9feff;
   font-size: 20px;
   display: grid;
@@ -867,6 +865,12 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  font-family: "Hind Madurai", sans-serif;
+}
+.pie__contacto h5 {
+  font-size: 30px;
+  color: #f9feff;
+  font-weight: 700;
   font-family: "Hind Madurai", sans-serif;
 }
 .pie__contacto .fb {

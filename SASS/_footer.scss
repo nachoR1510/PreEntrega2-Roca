@@ -1,7 +1,7 @@
 .pie {
 
     padding-top: 20px;
-    background-color: $colorFooter;
+    background-image: linear-gradient(to top, #0c1111, #1b2727);
     color: $colorFontAlt;
     font-size: 20px;
     display: grid;
@@ -54,6 +54,12 @@
         flex-direction: column;
         gap: 15px;
         font-family: $fuente;
+        h5{
+            font-size: 30px;
+            color: $colorFontAlt;
+            font-weight: 700;
+            font-family: $fuente;
+        }
         .fb{
 
             display: flex;

@@ -1,8 +1,6 @@
 .contacto {   
 
-    background-image: url(../img/fondo\ contacto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, #051e22, #5a944d);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
