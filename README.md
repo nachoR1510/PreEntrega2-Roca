@@ -1,4 +1,4 @@
-# PreEntrega2-Roca
+# PreEntrega3 
 -Agregue el display para tablet como se me recomendó en la entrega anterior.
 -Aplique SCSS en todo el proyecto y elimine la carpeta style.css.
 -Agregue animaciones en 3 páginas del proyecto y degrades en el footer y en la página de contacto.
