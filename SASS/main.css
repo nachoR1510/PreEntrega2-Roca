@@ -203,7 +203,8 @@
   justify-content: center;
 }
 .productos__destacados__style {
-  background-color: #d1c7bd;
+  /* background-color: #e8dbcb; */
+  background-image: linear-gradient(to top, #e8dbcb, #e2b9b3 55%);
   border-radius: 15px;
   width: 400px;
   height: 500px;
@@ -229,12 +230,13 @@
   height: 35px;
   width: 180px;
   border-radius: 10px;
-  background-color: #558673;
+  background-color: #839973;
   border-style: none;
-  color: #f9feff;
+  color: #36374b;
+  font-weight: 700;
 }
 .productos__destacados__style input:hover {
-  background-color: #75af99;
+  background-color: #a1bc8f;
 }
 
 @media (max-width: 480px) {
@@ -894,8 +896,8 @@
   gap: 5px;
 }
 .pie img {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
 }
 
 @media (max-width: 480px) {
