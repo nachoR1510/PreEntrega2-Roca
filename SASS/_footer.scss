@@ -1,20 +1,19 @@
 .pie {
 
     padding-top: 20px;
-    background-image: linear-gradient(to top, #0c1111, #1b2727);
-    color: $colorFontAlt;
-    font-size: 20px;
+    background-color: $colorBG;
+    color: $colorFont;
+    font-size: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:20px;
     padding-bottom: 20px;
-    border-top-style: solid;
-    border-top-width: 1px;
     &__texto{
 
         grid-column: 2/3;
         text-align: center;
         font-family: $fuente;
+        font-size: 4rem;
     }
     &__links {
 
@@ -24,16 +23,16 @@
         flex-direction: column;
         gap: 15px;
         h5{
-            font-size: 30px;
-            color: $colorFontAlt;
+            font-size: 3rem;
+            color: $colorFont;
             font-weight: 700;
             font-family: $fuente;
         }
         li a {
 
             text-decoration: none;
-            color: $colorFontAlt;
-            font-size: 20px;
+            color: $colorFont;
+            font-size: 2rem;
             font-weight: 700px;
             font-family: $fuente;
             &:hover {
@@ -44,7 +43,7 @@
     }
     &__fix{
 
-        padding-bottom: 2px;
+        padding-bottom: 3px;
     }
     &__contacto {
 
@@ -55,35 +54,20 @@
         gap: 15px;
         font-family: $fuente;
         h5{
-            font-size: 30px;
-            color: $colorFontAlt;
+            font-size: 3rem;
+            color: $colorFont;
             font-weight: 700;
             font-family: $fuente;
         }
-        .fb{
+        &__style{
 
             display: flex;
+            flex-direction: row;
             align-items: center;
             gap: 5px;
+            font-size: 3rem;
         }
-        .ig{
-
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .telefono{
-
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .correo{
-
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
+        
     }
     img{
 

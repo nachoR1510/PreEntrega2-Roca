@@ -1,14 +1,15 @@
 .inicio{
 
-    background-image: url(../img/indexImg.jpeg);
+    background-image: url(../img/fondoIndex.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px;
     &__texto{
 
-        grid-column: 2/3;
+        grid-column: 1/4;
         grid-row: 2/3;
         display: flex;
         flex-direction: column;
@@ -19,27 +20,29 @@
             color: $colorFontAlt;
             text-align: center;
             font-family: $fuente;
-            font-size: 50px;
+            font-size: 4.6rem;
             font-weight: 700;
+            background-color: #2022240f;
 
         }
         a{
 
             color: $colorFontAlt;
-            width: 450px;
+            width: 400px;
             text-align: center;
-            font-size: 35px;
+            font-size: 3rem;
             text-decoration: none;
             font-family: $fuente;
             font-weight: 700;
             border-style: solid;
             border-width: 0.5px;
-            border-radius: 20px;
+            border-radius: 7px;
+            background-color: #2022240f;
             &:hover {
 
                 background-color: $colorFontAlt;
                 color:$colorFont;
-                border-style: none;
+                border-color: $colorFontAlt;
                 opacity: 85%;
             }
         }
@@ -47,45 +50,68 @@
 
 
     }
+    &__flecha{
+
+        grid-row: 3/4;
+        grid-column: 2/3;
+        backdrop-filter: blur(2.5px);
+        background-color: #3bd9fd18;
+        width: 60px;
+        height: 60px;
+        border-radius: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50%;
+        img{
+
+            height: 30px;
+            width: 30px;
+        
+        }
+        &:hover{
+
+            backdrop-filter: blur(4px);
+        }
+        
+    }
    
 }
 
 .productos{
 
-    background-color: #322d29;
+    background-color: $colorBG;
     display: grid;
-    grid-column: 1fr;
-    grid-row: 200px auto;
-    padding-bottom: 100px;
-    border-top: #3c5f51;
-    border-top-style: solid;
-    gap: 10px;
-    h3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 550px;
+    &__titulo {
+        h3{
 
-        position: relative;
-        text-align: center;
-        font-size: 45px;
-        color: $colorFontAlt;
-        padding: 40px;
-        font-family: $fuente;
-        font-weight: 700;
+            position: relative;
+            text-align: center;
+            font-size: 5rem;
+            color: $colorFont;
+            font-family: $fuente;
+            font-weight: 700;
+            padding-top: 10px;
+        }
+
     }
     img {
     
-        width: 400px;
+        width: 320px;
         height: 310px;
-        border-radius: 5px;
     }
     &__destacados{
 
         display: flex;
-        gap: 25px;
+        gap: 40px;
         justify-content: center;
+        align-items: center;
         &__style{
 
-            /* background-color: #e8dbcb; */
-            background-image: linear-gradient(to top, #e8dbcb, #e2b9b3 55% );
-            border-radius: 15px;
+            background-color: $colorFont;
+            border-radius: 7px;
             width: 400px;
             height: 500px;
             display: flex;
@@ -95,17 +121,19 @@
             box-shadow: $boxShadow;
             h4 {
 
-                font-size: 30px;
+                font-size: 3rem;
                 margin-bottom: 5px;
                 text-align: center;
                 font-family: $fuente;
+                color: $colorFontAlt;
             } 
             p{
 
-                font-size: 18px;
-                margin-bottom: 10px;
+                font-size: 1.8rem;
+                margin-bottom: 20px;
                 text-align: center;
                 font-family: $fuente;
+                color: $colorFontAlt;
             }
             input {
 
@@ -114,8 +142,9 @@
                 border-radius: 10px;
                 background-color: #839973;
                 border-style: none;
-                color: #36374b;
+                color: $colorFontAlt;
                 font-weight: 700;
+                font-size: 1.3rem;
                 &:hover{
 
                     background-color: #a1bc8f;
@@ -143,20 +172,26 @@
             margin-left: 15px;
             margin-right: 15px;
          }
+        &__flecha{
+
+            display: none;
+        }
      
     }
 
     .productos{
 
+        display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: auto 1300px;
         &__destacados{
 
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         &__style {
+            display: flex;
+            flex-direction: column;
 
+         &__style {
              width: 350px;
-             height: 500px;
+             height: 400px;
              display: flex;
              flex-direction: column;
              align-items: center;
@@ -164,8 +199,8 @@
         }
         img {
 
-            width: 350px;
-            height: 310px;
+            width: 200px;
+            height: 200px;
             border-radius: 5px;
         }
     }
@@ -185,20 +220,28 @@
         }
         h2 {
 
-            font-size:35px;
+            font-size:3.5rem;
          }
+        &__flecha{
+
+            display: none;
+        }
      
     }
 
-    .productos{
+   .productos{
 
+        display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: auto 1500px;
         &__destacados{
 
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         &__style {
+            display: flex;
+            flex-direction: column;
 
+         &__style {
+             width: 500px;
+             height: 450px;
              display: flex;
              flex-direction: column;
              align-items: center;
@@ -206,7 +249,16 @@
         }
         img {
 
+            width: 280px;
+            height: 280px;
             border-radius: 5px;
         }
+        input {
+
+                height: 35px;
+                width: 250px;
+                font-size: 2rem;
+               
+            }
     }
 }

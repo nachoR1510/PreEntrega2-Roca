@@ -7,7 +7,7 @@
     <meta name="description" content="los mejores condimentos para tus comidas a los mejores precios.">
     <meta name="keywords" content="condimentos, especias, oregano, Argentina, Buenos Aires">
     <title>AyN las especias | empresa de condimentos </title>
-    <link rel="shortcut icon" href="./img/logoAyN(fondo blanco).jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/LogoAyN.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
@@ -25,7 +25,12 @@
 
         <div class="header__titulo"> 
 
-            <h1> AyN las especias </h1>
+         <a href="./index.html">
+               
+            <img src="./img/LogoAyN.svg" alt="logoAyN">
+         </a> 
+               
+            <h1>AyN las especias </h1>
 
         </div>
         
@@ -35,7 +40,7 @@
 
                     <li>
 
-                        <a href="./index.html" target="_self">Inicio</a>
+                        <a href="./index.html" target="_self" id="marca">Inicio</a>
 
                     </li>
 
@@ -117,29 +122,39 @@
 
     <main class="inicio"> 
 
-        <div class="inicio__texto animate__animated animate__fadeInDown animate__slow">
+        <div class="inicio__texto animate__animated animate__fadeInDown animate__slower">
 
             <h2>Somos una empresa de condimentos.</h2>
     
-            <a href="./pages/quienesSomos.html">Click aqui para saber mas.</a>
+            <a href="./pages/quienesSomos.html">Click aqui para saber mas</a>
 
+        </div>
+
+        <div class="inicio__flecha">
+
+            <a href="#productos">   <img src="./img/flecha.svg" alt="flecha">    </a> 
+         
         </div>
 
     </main>
 
-    <section class="productos"> <!-- productos destacados -->
+    <section id="productos" class="productos"> <!-- productos destacados -->
 
-        <h3> Productos destacados</h3>
+        <div class="productos__titulo">
+
+           <h3> Productos destacados</h3>
+
+        </div>
         
-        <div class="productos__destacados animate__animated animate__fadeInRight animate__slow">
+        <div class="productos__destacados">
 
             <div class="productos__destacados__style"> <!-- producto destacado 1 -->
     
-                <img src="./img/oregano.jpg" alt="oregano">
+                <img src="./img/oregano.png" alt="oregano">
     
                 <h4>Oregano</h4>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>$200</p>
     
                 <input type="submit" value="Comprar">
 
@@ -147,11 +162,11 @@
     
             <div class="productos__destacados__style"> <!-- producto destacado 2 -->
     
-                <img src="./img/pimientaRoja.jpg" alt="pimientaRoja">
+                <img src="./img/pimenton.png" alt="pimienton">
     
-                <h4>Pimienta roja</h4>
+                <h4>Pimienton</h4>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>$250</p>
     
                 <input type="submit" value="Comprar">
     
@@ -159,11 +174,11 @@
     
             <div class="productos__destacados__style"> <!-- producto destacado 3 -->
     
-                <img src="./img/condimentoPizza.jpg" alt="condimentoPizza">
+                <img src="./img/condimentoPizza.png" alt="condimentoPizza">
     
                 <h4>Condimento para pizza</h4>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>$200</p>
     
                 <input type="submit" value="Comprar">
     
@@ -179,7 +194,9 @@
 
         <div class="pie__texto">
 
-            <p>------- Copyrigth © 2023 AyN las especias -------</p>
+            <hr>
+
+            <p>Copyrigth © 2023 AyN las especias</p>
 
         </div>
 
@@ -228,35 +245,35 @@
 
             <h5> Redes </h5>
 
-            <div class="fb">    
+            <div class="pie__contacto__style">    
     
                 <a href="https://es-la.facebook.com" target="_blank"><img src="./img/iconFB.svg" alt="fb"></a> 
                 
-                <p>Facebook</p>
+                <p>Ayn Las Especias</p>
 
             </div>
     
-            <div class="ig">
+            <div class="pie__contacto__style">
     
                 <a href="https://www.instagram.com" target="_blank"><img src="./img/iconIG.svg" alt=""></a>
     
-                <p>Instagram</p>
+                <p>ayn.lasespecias</p>
     
             </div>
     
-            <div class="telefono">
+            <div class="pie__contacto__style">
     
                 <img src="./img/iconPhone.svg" alt="telefono">
     
-                <p>12341314</p> 
+                <p>+54 011 6811-5543</p> 
                 
             </div>
     
-            <div class="correo">
+            <div class="pie__contacto__style">
                 
              <img src="./img/iconMail.svg" alt="mail">
                      
-             <p>correo@gmail.com</p> 
+             <p>ayn.lasespecias@gmail.com</p> 
                 
     
             </div>

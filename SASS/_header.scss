@@ -2,20 +2,30 @@
 
     background-color: $colorBG;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 80px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 70px;
     align-items: center;
     &__titulo{
 
         display: flex;
         justify-content: flex-start;
+        align-items: center;
+        img{
+
+            height: 60px;
+            width: 50px;
+            padding-left: 3px;
+        }
         h1 {
 
             font-family:'Satisfy', cursive;
-            font-size: 35px;
-            font-weight: bold;
-            padding-left: 10px;
+            font-weight: 600;
+            color: #212121;
+            display: none;
+            padding-left: 3px;
+
         }
+
     }
 
     &__nav{
@@ -27,7 +37,7 @@
             a {
 
                 text-decoration: none;
-                font-size: 30px;
+                font-size: 2.3rem;
                 font-weight: 700;
                 color: $colorFont;
                 font-family:'Hind Madurai', sans-serif;
@@ -55,6 +65,11 @@
     }
 }
 
+#marca {
+
+    text-decoration: underline $colorFont;
+}
+
 @media (max-width: $movil) {
 
     .header {
@@ -67,6 +82,15 @@
 
             display: flex;
             justify-content: center;
+            img{
+
+                display: none;
+            }
+            h1{
+
+                font-size: 3rem;
+                display: block;
+            }
         }
         &__nav{
 
@@ -93,7 +117,7 @@
                 }
                 p{
 
-                    font-size: 12px;
+                    font-size: 1.5rem;
                     font-weight: bold;
                 }
             }
@@ -117,6 +141,15 @@
 
             display: flex;
             justify-content: center;
+            img{
+
+                display: none;
+            }
+            h1{
+
+                font-size: 3rem;
+                display: block;
+            }
         }
         &__nav{
 
@@ -143,7 +176,7 @@
                 }
                 p{
 
-                    font-size: 14px;
+                    font-size: 1.5rem;
                     font-weight: bold;
                 }
             }
