@@ -1,6 +1,6 @@
 .inicio{
 
-    background-image: url(../img/fondoIndex.jpg);
+    background-image: url(../img/fondoIndex.webp);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -183,24 +183,34 @@
 
         display: grid;
          grid-template-columns: 1fr;
-         grid-template-rows: auto 1300px;
+         grid-template-rows: auto 1100px;
         &__destacados{
 
             display: flex;
             flex-direction: column;
 
          &__style {
-             width: 350px;
-             height: 400px;
+             width: 300px;
+             height: 300px;
              display: flex;
              flex-direction: column;
              align-items: center;
+             h4{
+
+                font-size: 2rem;
+             }
+             p{
+
+                font-size: 1.2rem;
+             }
+
+
             }
         }
         img {
 
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 5px;
         }
     }

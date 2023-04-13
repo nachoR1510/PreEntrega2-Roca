@@ -107,11 +107,11 @@
     align-items: center;
   }
   .header__navMovil__style img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   .header__navMovil__style p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
   }
 }
@@ -160,7 +160,7 @@
   }
 }
 .inicio {
-  background-image: url(../img/fondoIndex.jpg);
+  background-image: url(../img/fondoIndex.webp);
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
@@ -311,22 +311,28 @@
   .productos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1300px;
+    grid-template-rows: auto 1100px;
   }
   .productos__destacados {
     display: flex;
     flex-direction: column;
   }
   .productos__destacados__style {
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .productos__destacados__style h4 {
+    font-size: 2rem;
+  }
+  .productos__destacados__style p {
+    font-size: 1.2rem;
+  }
   .productos img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 5px;
   }
 }
@@ -471,16 +477,16 @@
     align-items: center;
     background-color: #efe9e1;
     height: 200px;
-    width: 350px;
+    width: 250px;
     border-radius: 10px;
   }
   .tienda__productos__style img {
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
     border-radius: 70px;
   }
   .tienda__productos__style h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: bold;
     margin: 0 5px;
@@ -680,18 +686,19 @@
   }
   .clientes__info {
     display: grid;
-    grid-template-columns: 350px;
+    grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
   }
   .clientes__info__style {
     align-items: center;
     justify-content: center;
-    padding-right: 0%;
+    padding-right: 0;
+    margin-right: 0;
     border-right-style: none;
   }
   .clientes__info__style img {
-    height: 250px;
-    width: 250px;
+    height: 220px;
+    width: 220px;
   }
   .clientes__info__style h3 {
     padding-right: 0;
@@ -703,11 +710,10 @@
     border-left-style: none;
   }
   .clientes__info__frame iframe {
-    height: 250px;
-    width: 250px;
+    height: 220px;
+    width: 220px;
   }
   .clientes__info__frame h3 {
-    padding-left: 0;
     padding-bottom: 3px;
   }
 }
@@ -843,7 +849,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 200px 700px;
-  background-image: url(../img/fondoSuscripciones.jpg);
+  background-image: url(../img/fondoSuscripciones.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -935,7 +941,7 @@
   }
   .sub__planes__style {
     height: 450px;
-    width: 350px;
+    width: 300px;
   }
 }
 @media (min-width: 481px) and (max-width: 1023px) {

@@ -156,18 +156,21 @@
         &__info{
 
          display: grid;
-         grid-template-columns: 350px;
+         grid-template-columns:auto;
          grid-template-rows: 1fr 1fr;
          &__style{
 
             align-items: center;
             justify-content: center;
-            padding-right: 0%;
+            padding-right: 0;
+            margin-right: 0;
             border-right-style: none;
             img{
 
-                height: 250px;
-                width: 250px;
+                height: 220px;
+                width: 220px;
+               
+
             }
             h3 {
 
@@ -183,12 +186,11 @@
             border-left-style: none;
             iframe{
 
-                height: 250px;
-                width: 250px;
+                height: 220px;
+                width: 220px;
             }
             h3{
 
-                padding-left: 0;
                 padding-bottom: 3px;
             }
           }
