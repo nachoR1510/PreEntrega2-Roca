@@ -1,3 +1,6 @@
+# actualizacion de estilo 2
+.actualice el diseño de todas las paginas restantes y cambie algunas lineas de codigo e imagenes.
+
 # actualizacion de estilo 1
 .actualice el diseño de las paginas inicio y quienes somos. tambien el diseño de la navbar y el footer.
 
