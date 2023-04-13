@@ -375,10 +375,10 @@
   }
 }
 .tienda {
-  background-color: #322d29;
+  background-image: radial-gradient(ellipse 500px 250px, #2a2a2a, #202020);
   display: grid;
   grid-template-columns: 1fr;
-  max-height: 1200px;
+  max-height: 2400px;
   grid-template-rows: 150px auto;
 }
 .tienda form {
@@ -391,11 +391,13 @@
   border-radius: 10px;
   width: 35%;
   height: 40px;
+  font-size: 2rem;
 }
 .tienda form .buscar {
   height: 40px;
   width: 5%;
   border-radius: 10px;
+  font-size: 1.5rem;
 }
 .tienda__productos {
   display: flex;
@@ -410,20 +412,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f9feff;
+  background-color: #efe9e1;
   height: 350px;
   width: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .tienda__productos__style h2 {
-  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
   font-weight: 700;
   margin: 0 10px;
   font-family: "Hind Madurai", sans-serif;
 }
 .tienda__productos__style p {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
   margin: 5px 10px;
@@ -467,7 +469,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #f9feff;
+    background-color: #efe9e1;
     height: 200px;
     width: 350px;
     border-radius: 10px;
@@ -478,13 +480,13 @@
     border-radius: 70px;
   }
   .tienda__productos__style h2 {
-    font-size: 25px;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
     margin: 0 5px;
   }
   .tienda__productos__style p {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     margin: 5px 5px;
@@ -526,7 +528,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #f9feff;
+    background-color: #efe9e1;
     height: 200px;
     width: 300px;
     border-radius: 10px;
@@ -537,13 +539,13 @@
     border-radius: 70px;
   }
   .tienda__productos__style h2 {
-    font-size: 25px;
+    font-size: 2rem;
     text-align: center;
     font-weight: bold;
     margin: 0 5px;
   }
   .tienda__productos__style p {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     margin: 5px 5px;
@@ -756,7 +758,7 @@
   }
 }
 .contacto {
-  background-image: linear-gradient(to top, #051e22, #5a944d);
+  background-image: linear-gradient(#051e22, #5a944d);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -772,10 +774,12 @@
   font-size: 60px;
   font-weight: 700;
   font-family: "Hind Madurai", sans-serif;
+  color: #f9feff;
 }
 .contacto__texto p {
   font-size: 25px;
   font-family: "Hind Madurai", sans-serif;
+  color: #f9feff;
 }
 
 #casillaMail {
@@ -784,29 +788,31 @@
   justify-self: center;
   width: 500px;
   height: 350px;
-  background-color: #f9feff;
+  background-color: #efe9e1;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 18px 2px #000000;
-  border-style: dashed;
-  border-color: #902c2c;
 }
 #casillaMail .inputMail {
   border-radius: 15px;
   height: 40px;
   width: 350px;
+  font-size: 2rem;
 }
 #casillaMail .inputEnviar {
   border-radius: 5px;
   margin-top: 10px;
   width: 120px;
   height: 30px;
+  font-size: 2rem;
+  border-style: none;
+  background-color: #5a944d;
 }
 #casillaMail label {
-  font-size: 30px;
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -836,7 +842,7 @@
 .sub {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 200px 1000px;
+  grid-template-rows: 200px 700px;
   background-image: url(../img/fondoSuscripciones.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -849,29 +855,31 @@
   justify-content: center;
 }
 .sub__texto h2 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
   font-family: "Hind Madurai", sans-serif;
   color: #f9feff;
 }
 .sub__texto p {
-  font-size: 18px;
+  font-size: 2rem;
   text-align: center;
-  margin: 5px 60px;
+  margin-left: 20%;
+  margin-right: 20%;
   font-family: "Hind Madurai", sans-serif;
   color: #f9feff;
+  text-align: center;
 }
 .sub__planes {
   display: flex;
-  gap: 40px;
+  gap: 50px;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  margin-top: 6%;
+  align-items: center;
+  margin-bottom: 10%;
 }
 .sub__planes__style {
   background-color: #efe9e1;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 450px;
   width: 350px;
   box-shadow: 0px 0px 18px 2px #000000;
@@ -880,15 +888,20 @@
   align-items: center;
 }
 .sub__planes__style h3 {
-  font-size: 25px;
+  font-size: 3rem;
   font-weight: 700;
   margin-top: 5px;
   font-family: "Hind Madurai", sans-serif;
 }
+.sub__planes__style ul li {
+  font-size: 2rem;
+  font-family: "Hind Madurai", sans-serif;
+}
 .sub__planes__style p {
-  font-size: 18px;
+  font-size: 3rem;
+  font-weight: 700;
   text-align: center;
-  margin: 10px 20px;
+  margin-top: 20%;
   font-family: "Hind Madurai", sans-serif;
 }
 .sub__planes__style input {
@@ -910,8 +923,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1500px;
-    background-image: url(../img/fondoSuscripcionesMovil.jpg);
-    background-position: left;
   }
   .sub__texto p {
     margin-bottom: 12px;

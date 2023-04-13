@@ -1,6 +1,6 @@
 .contacto {   
 
-    background-image: linear-gradient(to top, #051e22, #5a944d);
+    background-image: linear-gradient(#051e22, #5a944d);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -16,11 +16,13 @@
             font-size: 60px;
             font-weight: 700;
             font-family: $fuente;
+            color: $colorFontAlt;
         }
         p{
 
             font-size: 25px;
             font-family: $fuente;
+            color: $colorFontAlt;
         }
     }
 }
@@ -32,20 +34,19 @@
     justify-self: center;
     width: 500px;
     height: 350px;
-    background-color: $colorFontAlt;
+    background-color: $colorBG;
     border-radius: 3px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: $boxShadow;
-    border-style: dashed;
-    border-color: #902c2c;
     .inputMail{
 
         border-radius: 15px;
         height: 40px;
         width: 350px;
+        font-size: 2rem;
     }
     .inputEnviar {
 
@@ -53,10 +54,13 @@
         margin-top: 10px;
         width: 120px;
         height: 30px;
+        font-size: 2rem;
+        border-style: none;
+        background-color: #5a944d;
     }
     label {
 
-        font-size: 30px;
+        font-size: 4rem;
         font-weight: bold;
     }
 }

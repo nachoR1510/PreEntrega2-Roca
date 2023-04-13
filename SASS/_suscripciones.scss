@@ -2,7 +2,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 1000px;
+    grid-template-rows: 200px 700px;
     background-image: url(../img/fondoSuscripciones.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,32 +15,34 @@
         justify-content: center;
         h2{
 
-            font-size: 40px;
+            font-size: 4rem;
             font-weight: 700;
             font-family: $fuente;
             color: $colorFontAlt;
         }
         p{
 
-            font-size: 18px;
+            font-size: 2rem;
             text-align: center;
-            margin: 5px 60px;
+            margin-left: 20%;
+            margin-right: 20%;
             font-family: $fuente;
             color: $colorFontAlt;
+            text-align: center;
         }
     }
     &__planes{
 
         display: flex;
-        gap:40px;
+        gap:50px;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
-        margin-top: 6%;
+        align-items: center;
+        margin-bottom: 10%;
         &__style{
 
-            background-color: #efe9e1;
-            border-radius: 10px;
+            background-color: $colorBG;
+            border-radius: 5px;
             height: 450px;
             width: 350px;
             box-shadow: $boxShadow;
@@ -49,16 +51,24 @@
             align-items: center;
             h3 {
 
-                font-size: 25px;
+                font-size: 3rem;
                 font-weight: 700;
                 margin-top: 5px;
                 font-family: $fuente;
             }
+            ul{
+                li{
+                    font-size: 2rem;
+                    font-family: $fuente;
+
+                }
+            }
             p{
 
-                font-size: 18px;
+                font-size: 3rem;
+                font-weight: 700;
                 text-align: center;
-                margin: 10px 20px;
+                margin-top: 20%;
                 font-family: $fuente;
             }
             input{
@@ -88,8 +98,6 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1500px;
-        background-image: url(../img/fondoSuscripcionesMovil.jpg);
-        background-position: left;
         &__texto {
 
             p{
