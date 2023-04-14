@@ -1,3 +1,6 @@
+### sitio web: 
+- https://aynlasespecias.000webhostapp.com/index.html
+
 ### optimizacion de img
 - Optimice todas las images y las converti en tamaño webp para una mejor optimizacion. 
 - Mejore el responsive desde la vista movil en dispositivos mas pequeños.
